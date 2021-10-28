@@ -1,5 +1,12 @@
-Thu 28 Oct 2021 09:20:25 AM -03 alertname: someloss target: Servicios.F_DNS.g_root-servers_net losspattern: loss: 100% rtt: rtt: U hostname: 192.112.36.4
-Thu 28 Oct 2021 09:20:35 AM -03 alertname: rttdetect target: Servicios.F_DNS.m_root-servers_net losspattern: loss: 0% rtt: rtt: 175ms hostname: 202.12.27.33
-Thu 28 Oct 2021 09:20:45 AM -03 alertname: rttdetect target: Servicios.F_DNS.c_root-servers_net losspattern: loss: 0% rtt: rtt: 155ms hostname: 192.33.4.12
-Thu 28 Oct 2021 09:20:55 AM -03 alertname: rttdetect target: Servicios.F_DNS.b_root-servers_net losspattern: loss: 0% rtt: rtt: 182ms hostname: 199.9.14.201
-Thu 28 Oct 2021 09:25:25 AM -03 alertname: someloss target: Servicios.F_DNS.g_root-servers_net losspattern: loss: 100% rtt: rtt: U hostname: 192.112.36.4
+Thu 28 Oct 2021 09:30:25 AM -03 alertname: someloss target: Servicios.F_DNS.g_root-servers_net losspattern: loss: 100% rtt: rtt: U hostname: 192.112.36.4
+Thu 28 Oct 2021 09:30:35 AM -03 alertname: rttdetect target: Servicios.F_DNS.m_root-servers_net losspattern: loss: 0% rtt: rtt: 175ms hostname: 202.12.27.33
+Thu 28 Oct 2021 09:30:45 AM -03 alertname: rttdetect target: Servicios.F_DNS.c_root-servers_net losspattern: loss: 0% rtt: rtt: 154ms hostname: 192.33.4.12
+Thu 28 Oct 2021 09:30:55 AM -03 alertname: rttdetect target: Servicios.F_DNS.b_root-servers_net losspattern: loss: 0% rtt: rtt: 182ms hostname: 199.9.14.201
+Thu 28 Oct 2021 09:35:25 AM -03 alertname: someloss target: Servicios.F_DNS.g_root-servers_net losspattern: loss: 100% rtt: rtt: U hostname: 192.112.36.4
+Thu 28 Oct 2021 09:35:35 AM -03 alertname: rttdetect target: Servicios.F_DNS.m_root-servers_net losspattern: loss: 0% rtt: rtt: 175ms hostname: 202.12.27.33
+Thu 28 Oct 2021 09:35:45 AM -03 alertname: rttdetect target: Servicios.F_DNS.c_root-servers_net losspattern: loss: 0% rtt: rtt: 155ms hostname: 192.33.4.12
+Thu 28 Oct 2021 09:35:55 AM -03 alertname: rttdetect target: Servicios.F_DNS.b_root-servers_net losspattern: loss: 0% rtt: rtt: 182ms hostname: 199.9.14.201
+Thu 28 Oct 2021 09:40:25 AM -03 alertname: someloss target: Servicios.F_DNS.g_root-servers_net losspattern: loss: 100% rtt: rtt: U hostname: 192.112.36.4
+Thu 28 Oct 2021 09:40:35 AM -03 alertname: rttdetect target: Servicios.F_DNS.m_root-servers_net losspattern: loss: 0% rtt: rtt: 175ms hostname: 202.12.27.33
+Thu 28 Oct 2021 09:40:45 AM -03 alertname: rttdetect target: Servicios.F_DNS.c_root-servers_net losspattern: loss: 0% rtt: rtt: 155ms hostname: 192.33.4.12
+Thu 28 Oct 2021 09:40:55 AM -03 alertname: rttdetect target: Servicios.F_DNS.b_root-servers_net losspattern: loss: 0% rtt: rtt: 182ms hostname: 199.9.14.201
