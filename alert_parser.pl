@@ -3,9 +3,23 @@ use strict;
 use warnings;
 use Data::Dumper;
 use WWW::Curl::Easy;
+use Log::Log4perl qw(:easy);
+
+Log::Log4perl->easy_init(
+        {
+        file  => ">> /var/log/syslog",
+        level => $INFO,
+        },
+
+        {
+        file  => "STDERR",
+        level => $DEBUG,
+        }
+        );
+
 
 my $dir = "/opt/smokeping/";
-my $log_file = "alert_smokeping.log";
+my $log_file = "/opt/smokeping/alert_smokeping.log";
 my %alert_arr;
 my %ip_arr;
 my $alerts;
@@ -55,3 +69,4 @@ $retcode = $curl->perform;
 print $retcode;
 #LETS DELETE ALERTS AFTER SENT TELEGRAM
 open $alerts, '>', $log_file;
+INFO("smokeping alert report created");
