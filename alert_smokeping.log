@@ -1,2 +1,0 @@
-Thu 28 Oct 2021 10:20:25 AM -03 alertname: someloss target: Servicios.F_DNS.g_root-servers_net losspattern: loss: 100% rtt: rtt: U hostname: 192.112.36.4
-Thu 28 Oct 2021 10:20:35 AM -03 alertname: someloss target: Servicios.F_DNS.i_root-servers_net losspattern: loss: 5% rtt: rtt: 13ms hostname: 192.36.148.17
