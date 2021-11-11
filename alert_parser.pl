@@ -25,7 +25,7 @@ my %ip_arr;
 my $alerts;
 my $counter;
 my $command;
-my $message = 'REPORTE SMOKEPING PARA SMOKEPING BSAS %0A';
+my $message = 'REPORTE SMOKEPING PARA SMOKEPING ZONDAS %0A';
 my $url;
 my $curl;
 my $retcode;

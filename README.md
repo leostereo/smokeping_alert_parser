@@ -1,6 +1,8 @@
 # smokeping_alert_parser
 # smokeping_alert_parser
 Requisitos
+
+mv smokeping_alert_parser/ smokeping
 apt-get install libwww-curl-perl
 
 alert_notify.sh #Archivo que ejecuta smoke para popular el log
