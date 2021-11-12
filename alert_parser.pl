@@ -29,6 +29,7 @@ my $message = 'REPORTE SMOKEPING PARA SMOKEPING ZONDAS %0A';
 my $url;
 my $curl;
 my $retcode;
+my $response_body;
 
 	open  $alerts, $log_file or die "Could not open $log_file: $!";
 
@@ -61,12 +62,26 @@ my $retcode;
 		}
 	}
 
-$url = 'https://api.telegram.org/bot830790814:AAF9J6sL7EEc8XESmZX2EH6NMjjBMjVxv_4/sendMessage?chat_id=856661113&text='.$message;
+$url = 'https://api.telegram.org/bot830790814:AAF9J6sL7EEc8XESmZX2EH6NMjjBMjVxv_4/sendMessage?chat_id=-555669702&text='.$message;
 $curl = WWW::Curl::Easy->new;
 $curl->setopt(CURLOPT_HEADER,1);
 $curl->setopt(CURLOPT_URL, $url);
+$curl->setopt(CURLOPT_WRITEDATA,\$response_body);
 $retcode = $curl->perform;
-print $retcode;
+#print $response_body;
+
+if($response_body =~ /message is too long/){
+	$url = 'https://api.telegram.org/bot830790814:AAF9J6sL7EEc8XESmZX2EH6NMjjBMjVxv_4/sendMessage?chat_id=-555669702&text='.'Demasiadas alertas en SMOKEPING ZONDAS, corriga el archivo de logs';
+	$curl = WWW::Curl::Easy->new;
+	$curl->setopt(CURLOPT_HEADER,1);
+	$curl->setopt(CURLOPT_URL, $url);
+	$retcode = $curl->perform;
+
+}else{
+	print "telegram ok";
+}
+
+
 #LETS DELETE ALERTS AFTER SENT TELEGRAM
 open $alerts, '>', $log_file;
 INFO("smokeping alert report created");
